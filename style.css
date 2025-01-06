@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+#box{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, rgb(113, 10, 209),rgb(110, 77, 108));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#box h1{
+    margin-bottom: 2vw;
+}
+#box h1 span{
+    color: rgb(239, 36, 36);
+}
+@media(max-width:650px){
+    #box h1{
+        font-size: 7vw;
+        margin-bottom: 10vw;
+    }
+}
+
+/* ####### textarea section ####### */
+
+#box textarea{
+    height: 50%;
+    width:60%;
+    resize: none;
+    padding: 2vw;
+    outline: 0;
+    font-size: medium;
+    background-color: rgba(91, 91, 186, 0.753);
+    border-radius: 10px;
+}
+@media(max-width:650px){
+    #box textarea{
+        height: 60%;
+        width:90%;
+        padding: 3vw;
+    } 
+}
+
+/* ###### bottom section ####### */
+
+#box .voices-btn-count{
+    height: 10%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1vw;
+}
+#box .voices-btn-count .counting{
+    height: 80%;
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#box .voices-btn-count .counting h3{
+    text-decoration: underline;
+}
+#box .voices-btn-count .counting p{
+    color: rgb(239, 36, 36);
+    font-weight: 600;
+}
+#box .voices-btn-count select{
+    height: 80%;
+    width: 50%;
+    background-color: rgba(91, 91, 186, 0.753);
+    border-radius: 20px;
+    cursor: pointer;
+    padding-left:2vw ;
+    padding-right:2vw ;
+    outline: none;
+    appearance: none;
+}
+#box .voices-btn-count button{
+    height: 80%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: rgb(243, 71, 71);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+@media(max-width:650px){
+    #box .voices-btn-count{
+        width: 90%;
+        justify-content: space-evenly;
+        margin-top: 1.5vw;
+    }
+}
